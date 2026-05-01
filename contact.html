@@ -22,22 +22,63 @@
     </header>
 
     <main>
-       <section>
-        <div>
-            <h1>Contact Me</h1>
-
+        <section>
             <div>
+                <h1>Contact Me</h1>
+
                 <div>
-                    <img src="./images/phone.svg" alt="">
-                    <a href="tel:+380688279334">+380 68 827 93 34</a>
-                </div>
-                <div>
-                    <img src="./images/mail.svg" alt="">
-                    <a href="mailto:vladyslav.kolisnyk@protonmail.com">vladyslav.kolisnyk@protonmail.com</a>
+                    <div>
+                        <img src="./images/phone.svg" alt="">
+                        <a href="tel:+380688279334">+380 68 827 93 34</a>
+                    </div>
+                    <div>
+                        <img src="./images/mail.svg" alt="">
+                        <a href="mailto:vladyslav.kolisnyk@protonmail.com">vladyslav.kolisnyk@protonmail.com</a>
+                    </div>
                 </div>
             </div>
-        </div>
-       </section> 
+
+            <div>
+                <form action="#" method="post">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Message</legend>
+                        <label for="subject">Subject:</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">-- Choose a topic --</option>
+                                <option value="general">General Question</option>
+                                <option value="cooperation">Cooperation</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        <p>Type of inquiry:</p>
+                        <label>
+                            <input type="radio" name="type" value="question" required>
+                            Question
+                        </label>
+                        <label>
+                            <input type="radio" name="type" value="suggestion"> Suggestion
+                        </label>
+                        <label>
+                            <input type="radio" name="type" value="complaint"> Complaint
+                        </label>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message..." required></textarea>
+                    </fieldset>
+                    <label>
+                        <input type="checkbox" name="consent" required>
+                        I agree to the processing of personal data
+                    </label>
+                    <button type="submit">Send Message <img src="./images/arrow-right.svg" alt=""></button>
+                </form>
+            </div>
+        </section> 
     </main>
 </body>
 </html>
